@@ -22,7 +22,7 @@ var s3 = new AWS.S3();
 var upload = multer({
   storage: multerS3({
     s3: s3,
-    bucket: 'hafiz-dup',
+    bucket: 's3-bucket-name',
     acl: 'authenticated-read',
     contentDisposition: 'attachment',
     serverSideEncryption: 'AES256',
