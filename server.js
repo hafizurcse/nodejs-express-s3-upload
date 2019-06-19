@@ -4,7 +4,6 @@ AWS.config.update({
     accessKeyId: process.env.S3_ACCESS_KEY,
     region: process.env.S3_REGION
 });
-const PORT = 3001;
 
 const express = require('express');
 const multer = require('multer');
