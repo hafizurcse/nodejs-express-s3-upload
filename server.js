@@ -49,5 +49,5 @@ app.post('/upload', upload.array('upl', 1), function (req, res, next) {
 });
 
 app.listen(app.get('port'), function () {
-    console.log(`Upload app listening on port ${PORT}! Open http://localhost:${PORT}.`);
+    console.log(`Server is listening on port ${process.env.PORT}! Open http://localhost:${process.env.PORT}.`);
 });
